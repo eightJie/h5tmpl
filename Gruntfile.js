@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            src: ['common/**'],
+            src: ['common/**', '!common/.git'],
             dest: 'shadow/theme/'
           }
         ]
