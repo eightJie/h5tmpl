@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=640,target-densitydpi=device-dpi, user-scalable=0"  />
+	<title>炫酷车模</title>
+    <link rel="stylesheet" type="text/css" href="../../lib/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="../../lib/swiper/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../../src/car/1.css">
+</head>
+<body>
+
+<div class="wrap">
+	<div id="loading" class="loading animated infinite block rotate-x duration-2"></div>
+    <div id="swiper-container" class="swiper-container">
+        <div  id='main' class="swiper-wrapper">
+            <div class="swiper-slide swiper-1 h">
+                <div class="img-wrap animated ">
+                    <div class="img-wrap-inner">
+                        <div class="img-per animated delay-1 duration-f8">
+                            <svg width="100%" height="100%">
+                                 <defs>
+                                    <pattern id="imgLeft" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                        <image xlink:href="../../imgs/car/photo/1.png" x="0" y="0" width="100%" height="100%" />
+                                    </pattern>
+                                </defs>
+                                <polygon points="0,0 524,0 0,411 524,822 0,822" fill="url(#imgLeft)"/>
+                            </svg>
+                        </div>
+                        <div class="img-per animated delay-1 duration-f8">
+                            <svg width="100%" height="100%">
+                                 <defs>
+                                    <pattern id="imgRight" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                        <image xlink:href="../../imgs/car/photo/1.png" x="0" y="0" width="100%" height="100%" />
+                                    </pattern>
+                                </defs>
+                                <polygon points="0,411 524,0 524,822" fill="url(#imgRight)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="txt-bgs">
+                    <div class="txt-bg animated duration-f5 delay-3d5"></div>
+                    <div class="txt-bg animated duration-f5 delay-4"></div>
+                    <div class="txt-bg animated duration-f5 delay-4d5"></div>
+                </div>
+                <div class="content-txt animated fadeIn delay-5">
+                    <p>想要笑得漂亮</p>
+                    <p>就必须活得漂亮</p>
+                </div>
+                <div class="wheel"></div>
+                <div class="dirs">
+                    <div class="dir dir1 animated duration-f3 delay-2"></div>
+                    <div class="dir dir2 animated duration-f3 delay-2d5"></div>
+                    <div class="dir dir3 animated duration-f3 delay-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script data-main="../../src/car/main" src="../../lib/requirejs/require.js"></script>
+</body>
+</html>

@@ -1,0 +1,423 @@
+@import '../common/common.less';
+@import 'c.less';
+
+.swiper-container-2-wrap{
+	background-color: #fff;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	position: absolute;
+	left: 52px;
+	top: 197px;
+	z-index: 501;
+	width: 472px;
+	height: 743px;
+	padding: 23px 36px 24px 38px;
+	visibility: hidden;
+}
+
+.swiper-container-2{
+	// visibility: visible;
+	position: relative;
+
+	.swiper-slide{
+		background-color: #fff;
+		.bg-cover();
+	}
+}
+
+.swiper-6{
+
+	.title{
+		width: 479px;
+		height: 223px;
+		position: absolute;
+		top: 311px;
+		left: 72px;
+	}
+	.t-down{
+		.bg-contain();
+		.bgImg('txt-down.png', 6);
+		width: 479px;
+		height: 223px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 11;
+		.ani-name(s6-t-down);
+	}
+	.t-up{
+		.bg-contain();
+		.bgImg('txt-up.png', 6);
+		width: 390px;
+		height: 127px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -176px;
+  		margin-top: -68px;
+		z-index: 13;
+		.ani-name(s6-t-up);
+	}
+	.t-up-up{
+		position: absolute;
+		left: 61px;
+  		top: 47px;
+  		z-index: 2;
+		width: 390px;
+		height: 127px;
+	}
+	.t-middle{
+		.bg-contain();
+		.bgImg('txt-middle.png', 6);
+		width: 454px;
+		height: 190px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -227px;
+		margin-top: -95px;
+		z-index: 12;
+		.ani-name(s6-t-middle);
+	}
+	.t-color-wrap{
+		width: 495px;
+		height: 224px;
+		position: absolute;
+		right: -18px;
+  		top: 2px;
+		z-index: 13;
+		overflow: hidden;
+		.ani-name(s6-t-color);
+	}
+	.t-color{
+		.bg-contain();
+		.bgImg('txt-color.png', 6);
+		width: 495px;
+		height: 224px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.bubbles{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+	}
+	.b-1{
+		.bg-contain();
+		.bgImg('tuoy.png', 6);
+		width: 37px;
+		height: 44px;
+		position: absolute;
+		right: 12px;
+  		top: 16px;
+	}
+	.b-2{
+		.circle(10px);
+		position: absolute;
+		right: -10px;
+  		top: 44px;
+	}
+	.b-3{
+		.circle(20px);
+		position: absolute;
+		right: -32px;
+  		top: 84px;
+	}
+	.b-4{
+		.circle(32px);
+		position: absolute;
+		right: -10px;
+  		top: 130px;
+	}
+	.b-5{
+		.circle(12px);
+		position: absolute;
+		left: 0;
+		top: 6px;
+	}
+	.b-6{
+		.circle(18px);
+		position: absolute;
+		left: 30px;
+  		top: 42px;
+	}
+	.b-7{
+		.circle(8px);
+		position: absolute;
+		bottom: -4px;
+		left: 175px;
+	}
+	.t-by{
+		.bg-contain();
+		.bgImg('by.png', 6);
+		width: 158px;
+		height: 36px;
+		position: absolute;
+		bottom: -60px;
+  		right: 28px;
+	}
+	.t-tip{
+		.bg-contain();
+		.bgImg('txt-tip.png', 6);
+		width: 289px;
+		height: 25px;
+		color: #fff;
+		position: absolute;
+		bottom: -150px;
+		left: 98px;
+		text-indent: -9999px;
+	}
+	.img-wrap{
+		display: none;
+		.bg-contain();
+		.bgImg('img-wrap.png', 7);
+		width: 545px;
+		height: 702px;
+		left: 54px;
+		top: 152px;
+		
+		.img-1{
+			.bg-cover();
+			.transform(perspective(500px) rotateY(14deg) skewY(-12deg));
+			.trans-origin(left center);
+			width: 290px;
+			height: 590px;
+			position: absolute;
+			top: 83px;
+  			left: 15px;
+		}
+		.img-2{
+			.bg-cover();
+			.transform(perspective(500px) rotateY(-14deg) skewY(-1deg));
+			.trans-origin(right center);
+			width: 290px;
+			height: 280px;
+			position: absolute;
+			top: 38px;
+  			right: 17px;
+
+		}
+		.img-3{
+			.bg-cover();
+			.transform(perspective(500px) rotateY(-14deg) skewY(7deg));
+			.trans-origin(right center);
+			width: 290px;
+			height: 280px;
+			position: absolute;
+			top: 344px;
+  			right: 17px;
+		}
+	}
+	.sheep-wrap{
+		display: none;
+		position: absolute;
+		left: 88px;
+		top: 1008px;
+		width: 465px;
+	}
+	.sheep{
+		.bg-contain();
+		.bgImg('sheep.png', 6);
+		width: 100%;
+		height: 162px;
+		position: absolute;
+		bottom: 0;
+		left: 44px;
+		z-index: 2;
+	}
+	.gl{
+		.bgImg('gl.png', 6);
+		background-repeat: repeat-x;
+		width: 100%;
+		height: 33px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		.ani-name(s6-gl);
+		.ani-duration(800s);
+		.ani-delay(1s);
+		.ani-fill-both();
+		.ani-time-func(linear);
+	}
+	.bubbles2, .bubbles3{
+		display: none;
+	}
+	.bb-1{
+		.circle(78px);
+		position: absolute;
+		top: 100px;
+		right: 19px;
+	}
+	.bb-2{
+		.circle(28px);
+		position: absolute;
+		top: 93px;
+		right: 95px;
+	}
+	.bb-3{
+		.circle(16px);
+		position: absolute;
+		top: 130px;
+		right: 126px;
+	}
+	.bb-4{
+		 .circle(52px);
+		 position: absolute;
+		top: 790px;
+  		left: 152px;
+	}
+	.bb-5{
+		.circle(48px);
+		position: absolute;
+		top: 792px;
+  		left: 196px;
+	}
+	.bb-6{
+		.circle(16px);
+		position: absolute;
+		top: 842px;
+  		left: 138px;
+	}
+}
+
+.swiper-6.state-list{
+	.bubbles2, .bubbles3{
+		display: block;
+	}
+	.t-by, .t-tip{
+		display: none;
+	}
+	.title{
+		.ani-name(s6-title-small);
+		.ani-duration(1s);
+		.ani-fill-both();
+	}
+	.img-wrap{
+		display: block;
+		.ani-name(s6-imgWrap);
+		.ani-duration(1s);
+		.ani-delay(1s);
+		.ani-fill-both();
+	}
+
+	.sheep-wrap{
+		display: block;
+		.ani-name(s6-sheepWrap);
+		.ani-duration(1s);
+		.ani-delay(1.5s);
+		.ani-fill-both();
+	}
+}
+
+.swiper-6.state-view{
+	.img-wrap{
+		.ani-name(s6-imgWrapHidden);
+		.ani-delay(0s);
+	}
+	.swiper-container-2-wrap{
+		visibility: visible;
+		.ani-name(s6-swiper2Show);
+		.ani-duration(1s);
+		.ani-fill-both();
+	}
+	.swiper-container-2{
+		visibility: visible;
+	}
+	.sheep-wrap{
+		display: none;
+	}
+	.bubbles3{
+		display: none;
+	}
+}
+
+@-webkit-keyframes s6-t-down{
+	0%{
+		.transform(translateX(-500px));
+	}
+	80%{
+		.transform(translateX(50px));
+	}
+	100%{
+	}
+}
+@-webkit-keyframes s6-t-middle{
+	0%{
+		.transform(translateX(500px));
+	}
+	80%{
+		.transform(translateX(-50px));
+	}
+	100%{
+	}
+}
+@-webkit-keyframes s6-t-up{
+	0%{
+		.transform(scale(0));
+	}
+	80%{
+		.transform(scale(1.2));
+	}
+	100%{
+	}
+}
+@-webkit-keyframes s6-t-color{
+	0%{
+		opacity: 0;
+	}
+	1%{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes s6-title-small{
+	0%{
+	}
+	100%{
+		.transform(translate(-100px, -317px) scale(.6));
+	}
+}
+@-webkit-keyframes s6-imgWrap{
+	0%{
+		.transform(scale(0));
+	}
+	100%{
+	}
+}
+@-webkit-keyframes s6-imgWrapHidden{
+	0%{
+	}
+	100%{
+		.transform(scale(0));
+	}
+}
+@-webkit-keyframes s6-swiper2Show{
+	0%{
+		.transform(scale(0));
+	}
+	100%{
+	}
+}
+@-webkit-keyframes s6-sheepWrap{
+	0%{
+		.transform(translateY(500px));
+	}
+	60%{
+		.transform(translateY(-50px));
+	}
+	100%{
+		.transform(translateY(0px));
+	}
+}
+@-webkit-keyframes s6-gl{
+	0%{
+		background-position: 0 0;
+	}
+	100%{
+		background-position: 30000px 0;
+	}
+}

@@ -1,0 +1,28 @@
+
+._br-transform(@css){
+	        transform: @css;
+			-o-transform: @css;
+	        -webkit-transform: @css;
+			-moz-transform: @css;
+
+}
+._br-animation(@css){
+	        animation: @css;
+			-o-animation: @css;
+	        -webkit-animation: @css;
+			-moz-animation: @css;
+
+}
+
+._br-keyframes(@name) { 
+    @-webkit-keyframes @name {
+        .-frames(-webkit-);
+    }
+    @-moz-keyframes @name {
+        .-frames(-moz-);
+    }
+    @keyframes @name {
+        .-frames();
+    }
+}
+

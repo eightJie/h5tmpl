@@ -1,0 +1,53 @@
+@import '../common/common.less';
+@import 'c.less';
+
+.swiper-3{
+
+	.img-c{
+		.ani-name(s3-img);
+	}
+
+	.content-txt{
+		left: 44px;
+		top: 880px;
+	}
+
+	.logo{
+		left: 372px;
+		top: 70px;
+	}
+
+	.a{
+		.bg-contain();
+		.bgImg('A.png', 3);
+		.ab(640px, 117px);
+		z-index: 2;
+	}
+
+	.a1{
+		.bg-contain();
+		.bgImg('a1.png', 3);
+		.ab(298px, 109px, 346px, 0);
+	}
+
+	.b{
+		.bg-contain();
+		.bgImg('B.png', 3);
+		.ab(630px, 181px, 0, 856px);
+	}
+
+	.b1{
+		.bg-contain();
+		.bgImg('b1.png', 3);
+		.ab(364px, 171px, 0, 863px);
+	}
+}
+
+@-webkit-keyframes s3-img{
+	0%{
+		.transform(scale3d(1.5, 1.5, 1.5));
+		opacity: .7;
+	}
+	100%{
+	}
+}

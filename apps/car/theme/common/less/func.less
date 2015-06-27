@@ -1,0 +1,104 @@
+.bg-contain(){
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bg-contain(@url){
+	.bg-contain();
+	background-image: url(@url);
+}
+
+.bg-cover(){
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bg-cover(@url){
+	.bg-cover();
+	background-image: url(@url);
+}
+
+
+.border-radius(@v){
+	-webkit-border-radius: @v;
+	-moz-border-radius: @v;
+	-o-border-radius: @v;
+	border-radius: @v;
+}
+
+.ab-center(@wid, @hei){
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: @wid;
+	height: @hei;
+	margin-left: -@wid/2;
+	margin-top: -@hei/2;
+
+}
+
+.ab(@wid, @hei, @left:0px, @top:0px, @zIndex: 1){
+	position: absolute;
+	top: @top;
+	left: @left;
+	width: @wid;
+	height: @hei;
+	z-index: @zIndex;
+}
+
+.ab-r(@wid, @hei, @right:0px, @top:0px, @zIndex: 1){
+	position: absolute;
+	top: @top;
+	right: @right;
+	width: @wid;
+	height: @hei;
+	z-index: @zIndex;
+}
+
+.ab-b(@wid, @hei, @left:0px, @bottom:0px, @zIndex: 1){
+	position: absolute;
+	bottom: @bottom;
+	left: @left;
+	width: @wid;
+	height: @hei;
+	z-index: @zIndex;
+}
+
+.bg-normal(@url){
+	background: url(@url) no-repeat center center;
+}
+
+.trans-origin(@v){
+	-webkit-transform-origin: @v;
+	-o-transform-origin: @v;
+	transform-origin: @v;
+}
+
+.transform(@v){
+	-webkit-transform: @v;
+	-o-transform: @v;
+	transform: @v;
+}
+
+.circle(@d, @bg:#fff){
+	background-color: @bg;
+	.border-radius(50%);
+	width: @d;
+	height: @d;
+}
+
+.trg-l(@wid, @hei, @color){
+	border: @wid solid transparent;
+	border-right-color: @color;
+	border-top-width: @hei/2;
+	border-bottom-width: @hei/2;
+	border-left-width: 0;
+}

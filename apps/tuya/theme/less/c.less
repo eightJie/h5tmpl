@@ -1,0 +1,33 @@
+@import '../common/common.less';
+
+@bgColor: #000;
+
+body{
+	background-color: @bgColor;
+}
+
+.bgImg(@name, @page:1){
+	background-image: url('images/@{page}/@{name}');
+}
+
+.bgImgRoot(@name){
+	background-image: url('images/@{name}');
+}
+
+.swiper-slide{
+	background-color: @bgColor;
+}
+
+.img-wrap{
+	position: absolute;
+	z-index: 500;
+}
+
+.content-txt{
+	color: #fff;
+	text-align: left;
+	line-height: 1.5;
+	position: absolute;
+	z-index: 2000;
+}
+

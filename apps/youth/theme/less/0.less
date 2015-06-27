@@ -1,0 +1,100 @@
+@import '../common/common.less';
+@import 'c.less';
+
+.cover{
+	.clock{
+		.bg-contain();
+		.bgImg('biaopan.png');
+		width: 492px;
+		height: 492px;
+		position: absolute;
+		left: 50%;
+		margin-left: -246px;
+		top: 134px;
+
+		.minute{
+			.bg-contain();
+			.bgImg('fenzhen.png');
+			background-position: 0 85%;
+			width: 30px;
+			height: 100%;
+			position: absolute;
+	        top: 0;
+		    left: 50%;
+		    margin-left: -15px;
+		    z-index: 2;
+		}
+		.minute.animated{
+			.ani-name(cover-minute);
+		    .ani-duration(3s);
+		}
+
+
+		.hour{
+			.bg-contain();
+			.bgImg('shizhen.png');
+			background-position: center 41%;
+			width: 62px;
+			height: 100%;
+			position: absolute;
+	        top: 0;
+		    left: 50%;
+		    margin-left: -31px;
+		    z-index: 1;
+		    .transform(rotate3d(0, 0, 1, 15deg));
+		}
+		.hour.animated{
+			.ani-name(cover-hour);
+		    .ani-duration(3s);
+		    .ani-time-func(ease-in);
+		}
+
+	}
+
+	.bg-txt{
+		.bg-contain();
+		.bgImg('txt.png');
+		width: 248px;
+		height: 73px;
+		position: absolute;
+		top: 756px;
+		left: 50%;
+		margin-left: -124px;
+	}
+
+	.hand{
+		.bg-contain();
+		.bgImg('hand.png');
+		width: 101px;
+		height: 66px;
+		position: absolute;
+		top: 559px;
+		left: 464px;
+		z-index: 100;
+		.ani-dir-both();
+	}
+}
+
+/**
+ * 时针旋转
+ */
+@-webkit-keyframes cover-hour{
+	0%{
+		.transform(rotate3d(0, 0, 1, 15deg));
+	}
+	100%{
+		.transform(rotate3d(0, 0, 1, 0deg));
+	}
+}
+
+/**
+ * 分针旋转
+ */
+@-webkit-keyframes cover-minute{
+	0%{
+		.transform(rotate3d(0, 0, 1, 0deg));
+	}
+	100%{
+		.transform(rotate3d(0, 0, 1, -180deg));
+	}
+}

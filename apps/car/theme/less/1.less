@@ -1,0 +1,141 @@
+@import '../common/common.less';
+@import 'c.less';
+
+@bColor1: #DB2464;
+
+.swiper-1{
+
+	&.h{
+		.img-wrap{
+			background-color: transparent;
+			.bg-contain();
+			.bgImg('h-bg.png', 1);
+			.ab(579px, 914px, 73px, 0);
+		}
+		.img-wrap-inner{
+			.ab(524px, 506px, 10px, 115px);
+		}
+	}
+
+	.img-wrap{
+		background-color: @bColor1;
+	}
+
+	.img-wrap-inner{
+		.ab(524px, 822px, 10px, 36px);
+		overflow: hidden;
+	}
+
+	.img-per{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		&:nth-child(1){
+			.ani-name(img-l);
+		}
+		&:nth-child(2){
+			.ani-name(img-r);
+			left: -1px;
+		}
+
+		// .trg{
+		// 	top: 0;
+		// 	left: 50%;
+		// 	z-index: 2;
+		// }
+
+		// &:nth-child(2){
+		// 	width: 50%;
+		// 	left: 50%;
+		// 	.bg-contain();
+		// 	background-position: right center;
+		// 	z-index: 2;
+
+		// 	// .img-c{
+		// 	// 	width: 524px;
+		// 	// 	height: 822px;
+		// 	// 	top: -411px;
+		// 	// 	left: auto;
+		// 	// 	right: 0;
+		// 	// }
+		// }
+
+
+	}
+	.img-c{
+		.bg-cover();
+		.ab(100%, 100%);
+	}
+	.trg{
+		position: absolute;
+		z-index: 600;
+		.trg-l(524px/2, 822px, @bColor1);
+	}
+
+	.content-txt{
+		top: 718px;
+		left: 422px;
+	}
+
+	.txt-bgs{
+		top: 613px;
+		right: 0;
+
+		.txt-bg:nth-child(1){
+			.bgImg('txt-bg1.png', 1);
+			.ab-r(255px, 217px, 0, 0);
+		}
+		.txt-bg:nth-child(2){
+			.bgImg('txt-bg2.png', 1);
+			.ab-r(251px, 161px, 0, 41px);
+		}
+		.txt-bg:nth-child(3){
+			.bgImg('txt-bg3.png', 1);
+			.ab-r(285px, 189px, 0, 17px);
+		}
+	}
+
+	.wheel{
+		.bgImg('wheel.png', 1);
+	}
+
+	.dirs{
+		.ab(530px, 338px, 0, 700px);
+		z-index: 600;
+	}
+	.dir{
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		.ani-name(dir);
+	}
+	.dir1{
+		.bgImg('dir1.png', 1);
+		.ab(530px, 338px, 0, 0);
+	}
+	.dir2{
+		.bgImg('dir2.png', 1);
+		background-position: 100% 100%;
+		.ab(362px, 135px, 169px, 203px);
+		left: auto;
+		top: auto;
+		right: 0;
+		bottom: 0;
+	}
+	.dir3{
+		.bgImg('dir3.png', 1);
+		.ab(153px, 135px, 169px, 203px);
+	}
+	
+}
+
+@-webkit-keyframes dir{
+	0%{
+		width: 0;
+		height: 0;
+	}
+	100%{
+	}
+}
