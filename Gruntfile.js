@@ -11,39 +11,31 @@ module.exports = function(grunt) {
           {
             expand: true,
             src: ['common/**', '!common/.git'],
-            dest: 'shadow/theme/'
-          }
+            dest: 'apps/shadow/theme/'
+          },
+          {
+            expand: true,
+            src: ['common/**', '!common/.git'],
+            dest: 'apps/car/theme/'
+          },
+          {
+            expand: true,
+            src: ['common/**', '!common/.git'],
+            dest: 'apps/gf/theme/'
+          },
+          {
+            expand: true,
+            src: ['common/**', '!common/.git'],
+            dest: 'apps/tuya/theme/'
+          },
+          {
+            expand: true,
+            src: ['common/**', '!common/.git'],
+            dest: 'apps/youth/theme/'
+          },
         ]
       }
 
-      // main: {
-      //   files: [
-      //     //imgs
-      //     {
-      //       expand: true,
-      //       src: ['imgs/*'],
-      //       dest: 'build/<%= pkg.version %>/'
-      //     },
-      //     // lib
-      //     {
-      //       expand: true,
-      //       src: ['lib/**'],
-      //       dest: 'build/<%= pkg.version %>/'
-      //     },
-      //     //css js
-      //     {
-      //       expand: true,
-      //       src: ['src/**/*.js', 'src/**/*.css'],
-      //       dest: 'build/<%= pkg.version %>/'
-      //     },
-      //     // html
-      //     {
-      //       expand: true,
-      //       src: ['./*.html'],
-      //       dest: 'build/<%= pkg.version %>/'
-      //     },
-      //   ]
-      // }
     },
 
     uglify: {
@@ -75,14 +67,14 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           ext: '.css',
-          src: 'shadow/theme/**/*.less'
+          src: ['apps/youth/theme/*.less', 'apps/youth/theme/less/*.less']
         }]
       }
     },
 
     watch: {
       styles: {
-        files: ['shadow/theme/**/*.less'], // which files to watch
+        files: ['apps/**/theme/**/*.less'], // which files to watch
         tasks: ['less'],
         options: {
           nospawn: true
